@@ -17,7 +17,7 @@ class Sedan(Vehicle):
         return self.__color
     def set_color(self, color):
         __COLOR_VARIANTS = ['blue', 'red', 'green', 'black', 'white']
-        if str(color).lower() in __COLOR_VARIANTS:
+        if color.lower() in __COLOR_VARIANTS:
             self.__color = color
         else:
             print(f'Нельзя сменить цвет на {color}')
