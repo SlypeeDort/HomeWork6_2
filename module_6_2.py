@@ -3,7 +3,7 @@ class Vehicle:
 
 
 class Sedan(Vehicle):
-    def __init__(self, owner, model, engine_power, color):
+    def __init__(self, owner, model,color, engine_power):
         self.owner = owner
         self.__model = model
         self.__engine_power = engine_power
@@ -29,6 +29,6 @@ vehicle1 = Sedan('Fedos', 'Toyota Mark II', 'blue', 500)
 vehicle1.__repr__()
 print()
 vehicle1.set_color('Pink')
-vehicle1.set_color('BLACK\n')
+vehicle1.set_color('BLACK')
 vehicle1.owner = 'Vasyok'
 vehicle1.__repr__()
